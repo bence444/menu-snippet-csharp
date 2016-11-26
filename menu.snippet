@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<CodeSnippets>
+	<CodeSnippet Format="1.0">
+		<Header>
+			<Title>menu</Title>
+			<Shortcut>menu</Shortcut>
+			<Description>Code snippet for menu (do..while loop)</Description>
+			<Author>Lovász Bence</Author>
+			
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>expression</ID>
+					<ToolTip>Code snippet for menu (do..while loop)</ToolTip>
+					<Default>false</Default>
+				</Literal>
+			</Declarations>
+
+			<Code Language="csharp">
+				<![CDATA[int valasz = 0;
+				
+				do
+				{
+					Console.Clear();
+
+				    Console.WriteLine("1. Menü");
+					Console.WriteLine("2. Menü");
+				    Console.WriteLine("3. Kilépés");
+
+				    valasz = Convert.ToInt32(Console.ReadLine());
+
+				    switch (valasz)
+				    {
+				    	case 1:
+
+				    		break;
+
+				    	case 2:
+
+				    		break;
+				    }
+				} while (valasz != 3);]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
